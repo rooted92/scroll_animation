@@ -5,11 +5,14 @@ window.addEventListener('scroll', checkBoxes);
 
 checkBoxes();
 
-const checkBoxes = () => {
+// remember that arrow functions cannot be hoisted (changed to function declaration)
+// you want to loop through each box and see if it is in the viewport
+function checkBoxes(){
     // you want to trigger the animation when the user scrolls to the bottom of the page
     // window.innerHeight is the height of the window
     // triggerBottom is 80% of the window height
     const triggerBottom = window.innerHeight * 0.8;
+    console.log(triggerBottom);
 
     boxes.forEach(box => {
         // getBoundingClientRect() returns the size of an element and its position relative to the viewport
