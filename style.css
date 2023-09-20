@@ -39,6 +39,9 @@ h1 {
 
 .box.show {
   transform: translateX(0);
-  transition: transform 0.5s ease-in-out;
+  /* transition: transform 0.5s ease-in-out; */
 }
 
+.box h2 {
+  font-size: 3rem;
+}
